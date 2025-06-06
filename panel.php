@@ -129,7 +129,7 @@ include('config/config.php');
       <a href="calendario.php" class="nav-link"><i class="bi bi-calendar-event fs-3"></i> <span class="link-text">Calendario</span></a>
     </nav>
     <nav class="nav flex-column mt-auto">
-      <a href="accesiblidades.php" class="nav-link"><i class="bi bi-universal-access fs-3"></i> <span class="link-text">Tema</span></a>
+      <a href="accesiblidades.php" class="nav-link"><i class="bi bi-universal-access fs-3"></i> <span class="link-text">Accesibilidades</span></a>
       <a href="ajustes.php" class="nav-link"><i class="bi bi-gear fs-3"></i> <span class="link-text">Ajustes</span></a>
       <a href="perfil.php" class="nav-link"><i class="bi bi-person-circle fs-3"></i> <span class="link-text">Perfil</span></a>
     </nav>
@@ -285,42 +285,42 @@ include('config/config.php');
           
           <div class="row text-center g-4">
             <div class="col-md-4">
-              <a href="instituto.php" class="text-decoration-none text-dark">
+              <a href="https://iesgoya.com/instituto/" class="text-decoration-none text-dark">
                 <i class="bi bi-map text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Instituto</h5>
                 <p>Historia, estatutos y documentación oficial</p>
               </a>
             </div>
             <div class="col-md-4">
-              <a href="departamentos.php" class="text-decoration-none text-dark">
+              <a href="https://iesgoya.com/departamentos/" class="text-decoration-none text-dark">
                 <i class="bi bi-briefcase text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Departamentos</h5>
                 <p>Accede a los distintos departamentos</p>
               </a>
             </div>
             <div class="col-md-4">
-              <a href="contacto.php" class="text-decoration-none text-dark">
+              <a href="https://iesgoya.com/contacto/" class="text-decoration-none text-dark">
                 <i class="bi bi-headset text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Contacto</h5>
                 <p>Información de contacto</p>
               </a>
             </div>
             <div class="col-md-4">
-              <a href="oferta-formativa.php" class="text-decoration-none text-dark">
+              <a href="https://llegarasalto.com/guiafp/centros/30008340.html" class="text-decoration-none text-dark">
                 <i class="bi bi-journal-text text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Oferta Formativa</h5>
                 <p>Descubre nuestra oferta formativa</p>
               </a>
             </div>
             <div class="col-md-4">
-              <a href="noticias.php" class="text-decoration-none text-dark">
+              <a href="panel.php" class="text-decoration-none text-dark">
                 <i class="bi bi-info-circle text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Últimas Noticias</h5>
                 <p>Noticias sobre el centro y su actualidad</p>
               </a>
             </div>
             <div class="col-md-4">
-              <a href="galeria.php" class="text-decoration-none text-dark">
+              <a href="https://iesgoya.com/instituto/galeria/" class="text-decoration-none text-dark">
                 <i class="bi bi-camera text-black-50" style="font-size: 2.5rem;"></i>
                 <h5 class="mt-2 text-primary fw-bold">Galería de Fotos</h5>
                 <p>Fotografías de eventos, profesorado y alumnos</p>
