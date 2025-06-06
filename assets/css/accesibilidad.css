@@ -1,0 +1,20 @@
+body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-acceso {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 100%;
+    }
+
+    .dyslexia-font {
+      font-family: 'Lexand', Arial, sans-serif !important;
+    }
+
+    @media (min-width: 768px) {
+      .btn-acceso {
+        width: 50%;
+      }
+    }

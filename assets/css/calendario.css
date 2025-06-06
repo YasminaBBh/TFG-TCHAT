@@ -1,0 +1,202 @@
+/* ---------------------------------------------
+   PALETA DE COLORES PERSONALIZADA (Variables CSS)
+--------------------------------------------- */
+:root {
+  --verde-pastel: #e6f9e6;
+  --amarillo-pastel: #fffbea;
+  --blanco-pastel: #d9d9d9;
+  --azul: #56aaf8;
+  --lila-pastel: #f3e6f9;
+  --texto-oscuro: #333;
+  --btn-bg: #262626;
+  --btn-hover: #555555;
+}
+
+/* ---------------------------------------------
+   ESTILO GENERAL DEL BODY
+--------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------------------------------------------
+   CONTENEDOR PRINCIPAL DEL CALENDARIO Y FORMULARIO
+--------------------------------------------- */
+.calendar-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-size: cover;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+
+/* ---------------------------------------------
+   PANEL DEL FORMULARIO DE EVENTOS
+--------------------------------------------- */
+.event-panel {
+  width: 300px;
+  min-height: 80vh;
+  background: #d9d9d9;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* ---------------------------------------------
+   TARJETA DEL CALENDARIO
+--------------------------------------------- */
+.calendar-card {
+  background: #d9d9d9;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  min-height: 80vh;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.calendar-card:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+}
+
+#calendar {
+  flex-grow: 1;
+}
+
+/* ---------------------------------------------
+   ESTILO DEL FULLCALENDAR
+--------------------------------------------- */
+.fc {
+  --fc-toolbar-bg: var(--btn-bg);
+  --fc-toolbar-color: var(--texto-oscuro);
+  --fc-button-bg: var(--btn-bg);
+  --fc-button-hover-bg: var(--btn-hover);
+  --fc-daygrid-day-bg-color: var(--verde-pastel);
+  --fc-daygrid-day-number-color: var(--texto-oscuro);
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.fc .fc-button {
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.fc .fc-button:hover,
+.fc .fc-button:focus {
+  background: var(--btn-hover) !important;
+  color: #9d9d9d !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-weight: bold;
+  color: var(--btn-bg);
+  text-transform: uppercase;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: var(--rosa-pastel) !important;
+}
+
+.fc .fc-event {
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 4px 6px;
+  font-size: 0.85rem;
+  color: #9d9d9d;
+}
+
+/* ---------------------------------------------
+   VISTA EN DISPOSITIVOS MÓVILES
+--------------------------------------------- */
+@media (max-width: 992px) {
+  .calendar-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .calendar-card,
+  .event-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .calendar-card > .d-flex {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .calendar-card > .d-flex i {
+    font-size: 2.5rem;
+  }
+
+  .calendar-card > .d-flex span {
+    font-size: 1.75rem;
+  }
+
+  /* Reducción de tamaño para el formulario */
+  .event-panel {
+    font-size: 0.9rem !important;
+    padding: 0.75rem !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 30px;
+  }
+
+  .event-panel .form-label {
+    font-size: 0.85rem !important;
+  }
+
+  .event-panel input,
+  .event-panel button {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+/* ---------------------------------------------
+   VISTA EN ESCRITORIO
+--------------------------------------------- */
+@media (min-width: 993px) {
+  .calendar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* CENTRADO VERTICAL */
+    gap: 2rem;
+    padding: 2rem;
+    min-height: calc(100vh - 40px); /* Altura mínima para centrar */
+  }
+
+  .calendar-card,
+  .event-panel {
+    align-self: center; /* Asegura que ambos se centren */
+  }
+}

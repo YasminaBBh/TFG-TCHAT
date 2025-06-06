@@ -1,0 +1,650 @@
+[
+  {
+    "nombre": "cara sonriente",
+    "caracter": "😀"
+  },
+  {
+    "nombre": "cara feliz",
+    "caracter": "😃"
+  },
+  {
+    "nombre": "cara riendo",
+    "caracter": "😄"
+  },
+  {
+    "nombre": "cara alegre",
+    "caracter": "😁"
+  },
+  {
+    "nombre": "cara con lágrimas de risa",
+    "caracter": "😂"
+  },
+  {
+    "nombre": "cara sonriente con ojos sonrientes",
+    "caracter": "😊"
+  },
+  {
+    "nombre": "cara pensativa",
+    "caracter": "🤔"
+  },
+  {
+    "nombre": "cara llorando",
+    "caracter": "😢"
+  },
+  {
+    "nombre": "cara triste",
+    "caracter": "☹️"
+  },
+  {
+    "nombre": "cara de enojo",
+    "caracter": "😠"
+  },
+  {
+    "nombre": "cara dormida",
+    "caracter": "😴"
+  },
+  {
+    "nombre": "cara con beso",
+    "caracter": "😘"
+  },
+  {
+    "nombre": "cara de sorpresa",
+    "caracter": "😮"
+  },
+  {
+    "nombre": "cara de miedo",
+    "caracter": "😱"
+  },
+  {
+    "nombre": "cara sudando",
+    "caracter": "😓"
+  },
+  {
+    "nombre": "cara enferma",
+    "caracter": "🤒"
+  },
+  {
+    "nombre": "cara con termómetro",
+    "caracter": "🤧"
+  },
+  {
+    "nombre": "cara con máscara",
+    "caracter": "😷"
+  },
+  {
+    "nombre": "corazón rojo",
+    "caracter": "❤️"
+  },
+  {
+    "nombre": "corazón roto",
+    "caracter": "💔"
+  },
+  {
+    "nombre": "corazón azul",
+    "caracter": "💙"
+  },
+  {
+    "nombre": "corazón verde",
+    "caracter": "💚"
+  },
+  {
+    "nombre": "estrella",
+    "caracter": "⭐"
+  },
+  {
+    "nombre": "estrella fugaz",
+    "caracter": "🌠"
+  },
+  {
+    "nombre": "fuego",
+    "caracter": "🔥"
+  },
+  {
+    "nombre": "hielo",
+    "caracter": "🧊"
+  },
+  {
+    "nombre": "nieve",
+    "caracter": "❄️"
+  },
+  {
+    "nombre": "sol",
+    "caracter": "☀️"
+  },
+  {
+    "nombre": "luna",
+    "caracter": "🌙"
+  },
+  {
+    "nombre": "nube",
+    "caracter": "☁️"
+  },
+  {
+    "nombre": "arcoíris",
+    "caracter": "🌈"
+  },
+  {
+    "nombre": "lluvia",
+    "caracter": "🌧️"
+  },
+  {
+    "nombre": "rayo",
+    "caracter": "⚡"
+  },
+  {
+    "nombre": "viento",
+    "caracter": "🌬️"
+  },
+  {
+    "nombre": "árbol",
+    "caracter": "🌳"
+  },
+  {
+    "nombre": "flor",
+    "caracter": "🌸"
+  },
+  {
+    "nombre": "hoja",
+    "caracter": "🍃"
+  },
+  {
+    "nombre": "cactus",
+    "caracter": "🌵"
+  },
+  {
+    "nombre": "manzana",
+    "caracter": "🍎"
+  },
+  {
+    "nombre": "plátano",
+    "caracter": "🍌"
+  },
+  {
+    "nombre": "naranja",
+    "caracter": "🍊"
+  },
+  {
+    "nombre": "sandía",
+    "caracter": "🍉"
+  },
+  {
+    "nombre": "uva",
+    "caracter": "🍇"
+  },
+  {
+    "nombre": "fresa",
+    "caracter": "🍓"
+  },
+  {
+    "nombre": "piña",
+    "caracter": "🍍"
+  },
+  {
+    "nombre": "cereza",
+    "caracter": "🍒"
+  },
+  {
+    "nombre": "pastel",
+    "caracter": "🍰"
+  },
+  {
+    "nombre": "chocolate",
+    "caracter": "🍫"
+  },
+  {
+    "nombre": "caramelo",
+    "caracter": "🍬"
+  },
+  {
+    "nombre": "helado",
+    "caracter": "🍦"
+  },
+  {
+    "nombre": "café",
+    "caracter": "☕"
+  },
+  {
+    "nombre": "té",
+    "caracter": "🍵"
+  },
+  {
+    "nombre": "cerveza",
+    "caracter": "🍺"
+  },
+  {
+    "nombre": "vino",
+    "caracter": "🍷"
+  },
+  {
+    "nombre": "hamburguesa",
+    "caracter": "🍔"
+  },
+  {
+    "nombre": "pizza",
+    "caracter": "🍕"
+  },
+  {
+    "nombre": "taco",
+    "caracter": "🌮"
+  },
+  {
+    "nombre": "sushi",
+    "caracter": "🍣"
+  },
+  {
+    "nombre": "pollo",
+    "caracter": "🍗"
+  },
+  {
+    "nombre": "pan",
+    "caracter": "🍞"
+  },
+  {
+    "nombre": "huevo",
+    "caracter": "🥚"
+  },
+  {
+    "nombre": "queso",
+    "caracter": "🧀"
+  },
+  {
+    "nombre": "gato",
+    "caracter": "🐱"
+  },
+  {
+    "nombre": "perro",
+    "caracter": "🐶"
+  },
+  {
+    "nombre": "ratón",
+    "caracter": "🐭"
+  },
+  {
+    "nombre": "conejo",
+    "caracter": "🐰"
+  },
+  {
+    "nombre": "oso",
+    "caracter": "🐻"
+  },
+  {
+    "nombre": "panda",
+    "caracter": "🐼"
+  },
+  {
+    "nombre": "león",
+    "caracter": "🦁"
+  },
+  {
+    "nombre": "tigre",
+    "caracter": "🐯"
+  },
+  {
+    "nombre": "vaca",
+    "caracter": "🐮"
+  },
+  {
+    "nombre": "cerdo",
+    "caracter": "🐷"
+  },
+  {
+    "nombre": "mono",
+    "caracter": "🐵"
+  },
+  {
+    "nombre": "elefante",
+    "caracter": "🐘"
+  },
+  {
+    "nombre": "jirafa",
+    "caracter": "🦒"
+  },
+  {
+    "nombre": "pájaro",
+    "caracter": "🐦"
+  },
+  {
+    "nombre": "pez",
+    "caracter": "🐟"
+  },
+  {
+    "nombre": "pulpo",
+    "caracter": "🐙"
+  },
+  {
+    "nombre": "ballena",
+    "caracter": "🐳"
+  },
+  {
+    "nombre": "cangrejo",
+    "caracter": "🦀"
+  },
+  {
+    "nombre": "mariposa",
+    "caracter": "🦋"
+  },
+  {
+    "nombre": "abeja",
+    "caracter": "🐝"
+  },
+  {
+    "nombre": "auto",
+    "caracter": "🚗"
+  },
+  {
+    "nombre": "camión",
+    "caracter": "🚚"
+  },
+  {
+    "nombre": "motocicleta",
+    "caracter": "🏍️"
+  },
+  {
+    "nombre": "bicicleta",
+    "caracter": "🚲"
+  },
+  {
+    "nombre": "avión",
+    "caracter": "✈️"
+  },
+  {
+    "nombre": "tren",
+    "caracter": "🚆"
+  },
+  {
+    "nombre": "barco",
+    "caracter": "🚢"
+  },
+  {
+    "nombre": "cohete",
+    "caracter": "🚀"
+  },
+  {
+    "nombre": "semáforo",
+    "caracter": "🚦"
+  },
+  {
+    "nombre": "puente",
+    "caracter": "🌉"
+  },
+  {
+    "nombre": "carretera",
+    "caracter": "🛣️"
+  },
+  {
+    "nombre": "gasolinera",
+    "caracter": "⛽"
+  },
+  {
+    "nombre": "reloj",
+    "caracter": "⌚"
+  },
+  {
+    "nombre": "calendario",
+    "caracter": "📅"
+  },
+  {
+    "nombre": "mapa",
+    "caracter": "🗺️"
+  },
+  {
+    "nombre": "teléfono",
+    "caracter": "📱"
+  },
+  {
+    "nombre": "televisión",
+    "caracter": "📺"
+  },
+  {
+    "nombre": "ordenador",
+    "caracter": "💻"
+  },
+  {
+    "nombre": "ratón de pc",
+    "caracter": "🖱️"
+  },
+  {
+    "nombre": "teclado",
+    "caracter": "⌨️"
+  },
+  {
+    "nombre": "cámara",
+    "caracter": "📷"
+  },
+  {
+    "nombre": "linterna",
+    "caracter": "🔦"
+  },
+  {
+    "nombre": "bombilla",
+    "caracter": "💡"
+  },
+  {
+    "nombre": "enchufe",
+    "caracter": "🔌"
+  },
+  {
+    "nombre": "libro",
+    "caracter": "📖"
+  },
+  {
+    "nombre": "cuaderno",
+    "caracter": "📓"
+  },
+  {
+    "nombre": "lápiz",
+    "caracter": "✏️"
+  },
+  {
+    "nombre": "bolígrafo",
+    "caracter": "🖊️"
+  },
+  {
+    "nombre": "pintura",
+    "caracter": "🎨"
+  },
+  {
+    "nombre": "regla",
+    "caracter": "📏"
+  },
+  {
+    "nombre": "mochila",
+    "caracter": "🎒"
+  },
+  {
+    "nombre": "maleta",
+    "caracter": "🧳"
+  },
+  {
+    "nombre": "ropa",
+    "caracter": "👕"
+  },
+  {
+    "nombre": "vestido",
+    "caracter": "👗"
+  },
+  {
+    "nombre": "sombrero",
+    "caracter": "🎩"
+  },
+  {
+    "nombre": "zapato",
+    "caracter": "👟"
+  },
+  {
+    "nombre": "calcetín",
+    "caracter": "🧦"
+  },
+  {
+    "nombre": "guante",
+    "caracter": "🧤"
+  },
+  {
+    "nombre": "bufanda",
+    "caracter": "🧣"
+  },
+  {
+    "nombre": "reloj de pulsera",
+    "caracter": "⌚"
+  },
+  {
+    "nombre": "persona saludando",
+    "caracter": "👋"
+  },
+  {
+    "nombre": "pulgar arriba",
+    "caracter": "👍"
+  },
+  {
+    "nombre": "pulgar abajo",
+    "caracter": "👎"
+  },
+  {
+    "nombre": "apretón de manos",
+    "caracter": "🤝"
+  },
+  {
+    "nombre": "abrazo",
+    "caracter": "🤗"
+  },
+  {
+    "nombre": "persona corriendo",
+    "caracter": "🏃"
+  },
+  {
+    "nombre": "persona bailando",
+    "caracter": "💃"
+  },
+  {
+    "nombre": "persona sentada",
+    "caracter": "🧘"
+  },
+  {
+    "nombre": "niño",
+    "caracter": "🧒"
+  },
+  {
+    "nombre": "hombre",
+    "caracter": "👨"
+  },
+  {
+    "nombre": "mujer",
+    "caracter": "👩"
+  },
+  {
+    "nombre": "anciano",
+    "caracter": "👴"
+  },
+  {
+    "nombre": "familia",
+    "caracter": "👨‍👩‍👧"
+  },
+  {
+    "nombre": "pareja",
+    "caracter": "💑"
+  },
+  {
+    "nombre": "bebé",
+    "caracter": "👶"
+  },
+  {
+    "nombre": "persona con corona",
+    "caracter": "🤴"
+  },
+  {
+    "nombre": "persona con gorro de fiesta",
+    "caracter": "🥳"
+  },
+  {
+    "nombre": "payaso",
+    "caracter": "🤡"
+  },
+  {
+    "nombre": "fantasma",
+    "caracter": "👻"
+  },
+  {
+    "nombre": "calavera",
+    "caracter": "💀"
+  },
+  {
+    "nombre": "zombi",
+    "caracter": "🧟"
+  },
+  {
+    "nombre": "robot",
+    "caracter": "🤖"
+  },
+  {
+    "nombre": "alien",
+    "caracter": "👽"
+  },
+  {
+    "nombre": "duende",
+    "caracter": "🧝"
+  },
+  {
+    "nombre": "superhéroe",
+    "caracter": "🦸"
+  },
+  {
+    "nombre": "supervillano",
+    "caracter": "🦹"
+  },
+  {
+    "nombre": "mago",
+    "caracter": "🧙"
+  },
+  {
+    "nombre": "hada",
+    "caracter": "🧚"
+  },
+  {
+    "nombre": "iglesia",
+    "caracter": "⛪"
+  },
+  {
+    "nombre": "mezquita",
+    "caracter": "🕌"
+  },
+  {
+    "nombre": "sinagoga",
+    "caracter": "🕍"
+  },
+  {
+    "nombre": "templo",
+    "caracter": "⛩️"
+  },
+  {
+    "nombre": "bandera de México",
+    "caracter": "🇲🇽"
+  },
+  {
+    "nombre": "bandera de España",
+    "caracter": "🇪🇸"
+  },
+  {
+    "nombre": "bandera de Argentina",
+    "caracter": "🇦🇷"
+  },
+  {
+    "nombre": "bandera de Colombia",
+    "caracter": "🇨🇴"
+  },
+  {
+    "nombre": "bandera de Chile",
+    "caracter": "🇨🇱"
+  },
+  {
+    "nombre": "bandera de Perú",
+    "caracter": "🇵🇪"
+  },
+  {
+    "nombre": "bandera de Venezuela",
+    "caracter": "🇻🇪"
+  },
+  {
+    "nombre": "bandera de Ecuador",
+    "caracter": "🇪🇨"
+  }
+]

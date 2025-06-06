@@ -1,0 +1,113 @@
+/* Reset y layout */
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Sidebar por defecto (escritorio) */
+.sidebar {
+  background-color:#0D6EFD;
+  color: #fff;
+  width: 250px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;           
+  flex-direction: column;
+}
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Enlaces */
+.sidebar .nav-link {
+  color:#e9e9e9 ;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebar .nav-link:hover {
+  background-color: rgb(142, 142, 246);
+  color: #fff;
+}
+.sidebar .nav-link i {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+.sidebar .link-text {
+  margin-left: 0.75rem;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+.sidebar.collapsed .link-text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Centrar el toggle */
+.toggle-btn {
+  justify-content: center;
+}
+
+/* Contenido principal */
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* -------------------------------
+   Media Query: móvil (<768px)
+   barra horizontal abajo
+   ------------------------------- */
+@media (max-width: 768px) {
+  /* Convertimos sidebar en bottom-nav */
+
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;               /* <-- aquí */
+    top: auto;
+    width: 100%;
+    height: 60px;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+  }
+  /* Aseguramos que, aunque esté 'collapsed', ocupe todo el ancho */
+  .sidebar.collapsed {
+    width: 100%;
+  }
+
+  /* Navegación horizontal */
+  .sidebar .nav {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar .nav-link {
+    flex: 1;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+  /* Ocultamos todo texto, solo iconos */
+  .sidebar .link-text {
+    display: none;
+  }
+  /* Ocultar toggle en móvil */
+  .toggle-btn {
+    display: none !important;
+  }
+
+  /* Dejar espacio para la barra inferior */
+  .content {
+    margin-bottom: 60px;
+  }
+
+}

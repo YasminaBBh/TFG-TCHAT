@@ -1,0 +1,118 @@
+.dark-mode {
+  background-color: #3d3d3d !important;
+  
+}
+
+.dark-mode .btn,
+.dark-mode .card {
+  background-color: #3d3d3d;
+  
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #3d3d3d;
+  
+}
+.dark-mode .sidebar {
+   background-color: #3d3d3d;
+   border-right: 1px solid white;
+}
+/*home*/
+.dark-mode {
+  background-color: #3d3d3d !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .app-one {
+  background-color: #2f2f2f !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .status-bar,
+.dark-mode .newMessage-heading {
+  background-color: #555 !important;
+  color: #fff !important;
+}
+
+.dark-mode .sideBar {
+  background-color: #2e2e2e !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .sideBar-body {
+  border-color: #555 !important;
+  background-color: #2e2e2e !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .sideBar-body:hover {
+  background-color: #444 !important;
+}
+
+.dark-mode .name-meta,
+.dark-mode .time-meta,
+.dark-mode .heading-name-meta {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .avatar-icon img {
+  border: 2px solid #888 !important;
+}
+
+.dark-mode .searchBox-inner,
+.dark-mode .composeBox-inner {
+  background-color: #222 !important;
+}
+
+.dark-mode .searchBox-inner input,
+.dark-mode .composeBox-inner input {
+  background-color: #333 !important;
+  color: #f1f1f1 !important;
+  border: none !important;
+}
+
+.dark-mode .conversation {
+  background-color: #2f2f2f !important;
+  color: #eee !important;
+}
+
+.dark-mode .message {
+  background-color: #3d3d3d !important;
+  background-image: none !important;
+}
+
+.dark-mode .receiver {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.dark-mode .sender {
+  background-color: rgb(29, 29, 158) !important;
+  color: #fff !important;
+}
+
+.dark-mode .reply {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .reply-emojis i,
+.dark-mode .reply-recording i,
+.dark-mode .reply-send i {
+  color: #ccc !important;
+}
+
+.dark-mode .reply-main textarea {
+  background-color: #333 !important;
+  color: #f1f1f1 !important;
+  border: none !important;
+}
+
+      .dark-mode .cabecera {
+  background-color: #222;
+  color: #f1f1f1;
+}
+.dark-mode .header{
+      background-color: #222 !important;
+      color: #f1f1f1;
+    }
