@@ -50,19 +50,6 @@ if (isset($_SESSION['email_user']) != "") {
            z-index: 9999;
         }
 
-      @media (max-width: 768px) {
-        .sidebar {
-          position: absolute;
-          width: 100%;
-          height: auto;
-          z-index: 1050;
-        }
-
-        main {
-          margin-left: 0 !important;
-        }
-
-      }
       .cabecera{
         height: 70px;
         background-color: #0d6efd;
@@ -125,8 +112,8 @@ if (isset($_SESSION['email_user']) != "") {
   </div>
 
   <!-- Botones de añadir usuario y crear grupo -->
-  <div class="col text-end d-flex justify-content-end align-items-center gap-3">
-    <button type="button" class="btn btn-light" id="addUser" onclick="window.location.href='addUsers.php'">
+  <div class="col text-end d-flex justify-content-end align-items-center pe-3">
+    <button type="button" class="btn btn-light me-2" id="addUser" onclick="window.location.href='addUsers.php'">
       <i class="bi bi-person-plus-fill fs-4"></i>
     </button>
     <button type="button" class="btn btn-light" id="createGroup" onclick="window.location.href='createGroups.php'">

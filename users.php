@@ -203,3 +203,46 @@ if (isset($_SESSION['email_user']) != "") {
   </script>
 
 <?php } ?>
+<style> 
+  @media (max-width: 768px) {
+  .sideBar-body {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .sideBar-avatar {
+    width: auto;
+    margin-right:10px;
+  }
+
+  .sideBar-avatar img,
+  .sideBar-avatar i {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .sideBar-main {
+    flex: 1;
+    padding-left: 10px;
+  }
+
+  .sideBar-name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .sideBar-time {
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .gap-3 {
+    gap: 0 !important;
+  }
+}
+</style>

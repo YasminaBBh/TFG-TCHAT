@@ -2,14 +2,32 @@
 <html lang="es">
   <link rel="stylesheet" href="/assets/css/oscuro.css" />
 <style>
-  .cabecera{
+  .barUser{
         height: 70px;
         background-color: #0d6efd;
          color: white;
       }
-      .dark-mode .cabecera {
+      .dark-mode .barUser {
   background-color: #222;
   color: #f1f1f1;
+}
+body{
+  box-sizing: border-box;
+}
+#conversation {
+  padding-top: 70px; 
+}
+@media (max-width: 768px) {
+.barUser{
+        height: 70px;
+        background-color: #0d6efd;
+         color: white;
+          position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+      }
 }
 </style>
 <body>
@@ -35,7 +53,7 @@
   while ($rowUser = mysqli_fetch_array($QuerySeleccionado)) {
   ?>
  
-    <div class="row heading  align-items-center px-3 cabecera" id="user-selected" style="height: 70px;">
+    <div class="row heading  align-items-center px-3  barUser" id="user-selected" style="height: 70px;">
   <!-- Avatar + flecha -->
   <div class="col-auto d-flex align-items-center">
     <a href="./" class="d-flex align-items-center text-white text-decoration-none">
