@@ -45,9 +45,7 @@ INSERT INTO `accesos` (`id`, `titulo`, `descripcion`, `imagen_url`, `enlace`) VA
 (3, 'EDUCARM', 'Accede al portal educativo EDUCARM', 'assets\\img/educarm.png', 'https://www.educarm.es/home'),
 (4, 'FP A DISTANCIA', 'Formación Profesional en modalidad online', 'assets\\img/distancia.jpg', 'https://ead.murciaeduca.es/login/index.php'),
 (5, 'LLEGARÁS ALTO', 'Campaña regional de orientación y FP', 'assets\\img/llegaras alto.jpg', 'https://aulavirtual.murciaeduca.es/index.php'),
-(6, 'AMPA', 'Asociación de madres y padres del alumnado', '\\assets\\img/ampa.png', 'https://iesgoya.com/ampa/'),
-(7, 'TRANSPORTE PÚBLICO', 'Horarios y rutas de autobuses escolares', 'assets\\img/transporte publico.jpg', 'https://drive.google.com/drive/folders/1VzyrHD26Ve2dWQY2sjh7dQZ-Yh3SeYDR'),
-(8, 'ERASMUS+', 'Información sobre movilidades internacionales', '\\assets\\img/erasmus.jpg', 'https://iesgoya.com/erasmus/');
+(6, 'ERASMUS+', 'Información sobre movilidades internacionales', '\\assets\\img/erasmus.jpg', 'https://iesgoya.com/erasmus/');
 
 -- --------------------------------------------------------
 
