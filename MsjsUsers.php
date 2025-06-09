@@ -29,7 +29,11 @@ while ($UserMsjs = mysqli_fetch_array($QueryMsjs)) {
           <div class="message-text">
             <?php
             if (!empty($UserMsjs['message'])) {
-              echo $UserMsjs['message'];
+              if ($archivo == "Giphy") { ?>
+                <img src="<?php echo $UserMsjs['message']; ?>" style="width: 100%; max-width: 250px;">
+              <?php } else {
+                echo $UserMsjs['message'];
+              }
             } elseif ($esImagen) { ?>
               <img src="<?php echo 'archivos/' . $archivo; ?>" style="width: 100%; max-width: 250px;">
               
@@ -59,7 +63,11 @@ while ($UserMsjs = mysqli_fetch_array($QueryMsjs)) {
           <div class="message-text">
             <?php
             if (!empty($UserMsjs['message'])) {
-              echo $UserMsjs['message'];
+              if ($archivo == "Giphy") { ?>
+                <img src="<?php echo $UserMsjs['message']; ?>" style="width: 100%; max-width: 250px;">
+              <?php } else {
+                echo $UserMsjs['message'];
+              }
             } elseif ($esImagen) { ?>
               <img src="<?php echo 'archivos/' . $UserMsjs['archivos']; ?>" style="width: 100%; max-width: 250px;">
               <div class="row">

@@ -16,7 +16,6 @@ if (isset($_SESSION['email_user']) != "") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="TCHAT - Tu aplicación de mensajería instantánea para compartir mensajes con tus compañeros de clase.">
     <meta name="author" content="Alejandro y Yasmin">
-    <meta name="keyword" content="Web Developer Urian Viera">
     <title>TCHAT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
@@ -41,6 +40,9 @@ if (isset($_SESSION['email_user']) != "") {
         transition: margin-left 0.3s ease;
       }
 
+      .sideBar {
+        height: auto;
+      }
       .friendRequests {
           position:relative ;
           top: -13px;

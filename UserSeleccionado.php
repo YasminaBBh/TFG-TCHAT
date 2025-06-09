@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
   <link rel="stylesheet" href="/assets/css/oscuro.css" />
+  <link rel="stylesheet" href="/assets/css/emojis&gifs.css">
 <style>
   .barUser{
         height: 70px;
@@ -18,18 +20,23 @@ body{
   padding-top: 70px; 
 }
 @media (max-width: 768px) {
-.barUser{
+      .barUser{
         height: 70px;
         background-color: #0d6efd;
          color: white;
           position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
       }
+
 }
+
+
+
 </style>
+</head>
 <body>
 
   <?php
@@ -53,10 +60,10 @@ body{
   while ($rowUser = mysqli_fetch_array($QuerySeleccionado)) {
   ?>
  
-    <div class="row heading  align-items-center px-3  barUser" id="user-selected" style="height: 70px;">
+<div class="row heading  align-items-center px-3 barUser" id="user-selected" style="height: 70px;">
   <!-- Avatar + flecha -->
   <div class="col-auto d-flex align-items-center">
-    <a href="./" class="d-flex align-items-center text-white text-decoration-none">
+    <a href="home.php" class="d-flex align-items-center text-white text-decoration-none">
       <i class="zmdi zmdi-arrow-left me-2" style="font-size: 22px;"></i>
       <img src="<?php echo 'imagenesperfil/' . $rowUser['imagen']; ?>" 
            class="rounded-circle" 
@@ -74,7 +81,7 @@ body{
 
   <!-- Botón eliminar -->
   <div class="col-auto text-end">
-    <button class="btn btn-danger btn-sm" onclick="eliminarUsuario(<?php echo $rowUser['id']; ?>)">
+    <button class="btn btn-danger btn-sm me-2" onclick="eliminarUsuario(<?php echo $rowUser['id']; ?>)">
       <i class="bi bi-trash"></i> Eliminar usuario
     </button>
   </div>
@@ -118,7 +125,11 @@ body{
                 <div class="message-text">
                   <?php
                   if (!empty($UserMsjs['message'])) {
-                    echo $UserMsjs['message'];
+                    if ($archivo == "Giphy") { ?>
+                      <img src="<?php echo $UserMsjs['message']; ?>" style="width: 100%; max-width: 250px;">
+                    <?php } else {
+                      echo $UserMsjs['message'];
+                    }
                   } elseif (!empty($archivo)) {
                     if ($esImagen) { ?>
                       <img src="<?php echo 'archivos/' . $archivo; ?>" style="width: 100%; max-width: 250px;">
@@ -148,7 +159,11 @@ body{
                 <div class="message-text">
                   <?php
                   if (!empty($UserMsjs['message'])) {
-                    echo $UserMsjs['message'];
+                    if ($archivo == "Giphy") { ?>
+                      <img src="<?php echo $UserMsjs['message']; ?>" style="width: 100%; max-width: 250px;">
+                    <?php } else {
+                      echo $UserMsjs['message'];
+                    }
                   } elseif (!empty($archivo)) {
                     if ($esImagen) { ?>
                       <img src="<?php echo 'archivos/' . $archivo; ?>" style="width: 100%; max-width: 250px;">
@@ -190,9 +205,29 @@ body{
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="smiley" x="3147" y="3209">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z" fill="#7d8489" />
           </svg>
+          <div class="emoji-panel" id="emojiPanel">
+            <div class="tabs">
+              <div class="tab active" id="emojiTab">Emojis</div>
+              <div class="tab" id="gifTab">GIFs</div>
+            </div>
+            <div class="tab-content active" id="emojis">
+              
+            </div>
+            <div class="tab-content" id="gifs">
+              <input type="text" id="gifSearch" placeholder="Buscar GIFs...">
+              <div id="gifResults"></div>
+            </div>
+          </div>
         </div>
-        <input class="input-msg" name="message" id="message" placeholder="Escribir tu Mensaje y presiona Enter..." autocomplete="off" autofocus="autofocus" required>
+        <input class="input-msg" name="message" id="message" placeholder="Escribe tu Mensaje..." autocomplete="off" autofocus="autofocus" required>
+          
+        <button class="send" id="botonenviarMensaje">
+          <div class="circle">
+            <i class="zmdi zmdi-mail-send" title="Enviar Mensaje..."></i>
+          </div>
+        </button>
         <i class="zmdi zmdi-comment-image ps-2 pe-2" style="font-size: 45px; color: grey;" title="Enviar Imagen." id="mostrarformenviarimg"></i>
+        </div>
       </form>
     </div>
 
@@ -271,7 +306,7 @@ body{
                 }
               })
               }
-          }, 4000);
+          }, 3000);
       }
 
       actualizar(); //Llamado a la funcion.
@@ -279,10 +314,24 @@ body{
 
 
       // Enviar mensaje de texto
-      $("#formenviarmsj_texto").keypress(function(e) {
-        if (e.which == 13) {
+      $("#formenviarmsj_texto").submit(function(e) {
+        e.preventDefault();
+        if ($('#message').val() != '') {
+          enviarMensaje();
+        }
+      });
 
-          var url = "acciones/RegistMsj.php";
+      // Envio de mensaje por boton
+      var enviandoMensaje = false;
+      $('body').off('click', '#botonenviarMensaje').on('click', '#botonenviarMensaje', async function(e) {
+        e.preventDefault();
+        if ($('#message').val() != '') {
+          enviarMensaje();
+        }
+      });
+
+      function enviarMensaje() {
+        var url = "acciones/RegistMsj.php";
           $.ajax({
             type: "POST",
             url: url,
@@ -291,7 +340,7 @@ body{
             },
             success: function(data) {
               $("#conversation").load('MsjsUsers.php?id=' + idConectado, function() {
-                scroll();
+                //scroll();
               });
               //$('#conversation').html(data);
               $("#message").val(""); //limpiar el input del msg
@@ -300,8 +349,7 @@ body{
             }
           });
           return false;
-        }
-      });
+      }
 
 
       $("#formenviaimg").hide();
@@ -316,8 +364,37 @@ body{
         $("#formnormal").show(200);
       });
 
+      function scroll() {
+        var el = $('#conversation')[0];
+        if (el) {
+          el.scrollTop = el.scrollHeight;
+        }
+      }
     });
 
+    // Eliminar usuario
+    function eliminarUsuario(id) {
+      if (confirm("¿Estás seguro de que deseas eliminar este usuario?")) {
+        $.ajax({
+          type: "POST",
+          url: "acciones/eliminarUsuario.php",
+          dataType: "json",
+          data: JSON.stringify({ id_contacto: id, id_conectado: "<?php echo $idConectado; ?>" }),
+          success: function(response) {
+            if (response == "success") {
+              alert("Usuario eliminado correctamente.");
+              window.location.href = "home.php"; // Reiniciar pagina
+            } else {
+              alert("Error al eliminar el usuario. Inténtalo de nuevo.");
+            }
+          },
+          error: function(error) {
+            console.error("Error en la conexión:", error);
+            alert("Error en la conexión. Inténtalo de nuevo.");
+          }
+        });
+      }
+    }
 
     // Envío de imagen
     var enviandoImagen = false;
@@ -380,5 +457,6 @@ body{
       }
   </script>
 <script src="assets/js/theme.js"></script>
+<script src="assets/js/emojis&gifs.js"></script>
 </body>
 </html>

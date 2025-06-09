@@ -85,7 +85,6 @@ if (isset($_SESSION['email_user']) != "") {
     </div>
   </div>
 
-  <script type="text/javascript" src="assets/js/jquery-3.7.1.js"></script>
   <script type="text/javascript">
     $(function() {
       $(".sideBar-body").on("click", function() {
@@ -200,6 +199,12 @@ if (isset($_SESSION['email_user']) != "") {
     if (searchInput.value) {
       filterChats();
     }
+    $(".chat-item").on("click", function() {
+      if (window.innerWidth <= 768) {
+        $(".chatList").addClass("oculto");
+        $(".conversation").addClass("expandido");
+      }
+    });
   </script>
 
 <?php } ?>
@@ -241,8 +246,6 @@ if (isset($_SESSION['email_user']) != "") {
     text-align: right;
   }
 
-  .gap-3 {
-    gap: 0 !important;
-  }
+  
 }
 </style>

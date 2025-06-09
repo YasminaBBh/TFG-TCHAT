@@ -23,7 +23,6 @@ body {
 }
 
 
-
 .notification-counter {
   background-color: #28a745;
   color: #fff;
@@ -417,7 +416,7 @@ transform: translateX(-50%) translateY(-50%);
 }
 
 .message-main-receiver {
-  padding: 10px 20px;
+  padding: 3px 20px;
   max-width: 60%;
 }
 
@@ -436,14 +435,15 @@ transform: translateX(-50%) translateY(-50%);
 
 .message-time {
   margin: 0 !important;
-  margin-left: 100px !important;
+  float: right;
   font-size: 12px;
   text-align: right;
-  color: olive;
+  color: black;
 
 }
 
 .receiver {
+  max-width: 40vw;
   width: auto !important;
   padding: 4px 10px 7px !important;
   border-radius: 10px 10px 10px 0;
@@ -455,13 +455,13 @@ transform: translateX(-50%) translateY(-50%);
 
 .sender {
   float: right;
+  max-width: 40vw;
   width: auto !important;
-  background: darkseagreen;
+  background: #68d6daea;
   border-radius: 10px 10px 0 10px;
   padding: 4px 10px 7px !important;
   font-size: 12px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-  display: inline-block;
   word-wrap: break-word;
   color: black;
 }
@@ -536,6 +536,18 @@ transform: translateX(-50%) translateY(-50%);
   box-shadow: none;
 }
 
+@media (max-width: 768px) {
+  .message {
+  padding-top: 70px !important;
+  }
+  .chatList.oculto {
+    display: none !important;
+  }
 
+  .conversation.expandido {
+    display: block !important;
+    width: 100% !important;
+  }
+}
 
 

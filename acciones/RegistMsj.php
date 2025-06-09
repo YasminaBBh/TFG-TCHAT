@@ -12,7 +12,7 @@ $UserId 		      = $_POST['user_id'];
 $to_id 			      = $_POST['to_id'];
 $para                 = $_POST['to_user'];
 $leido 			      = "NO";
-$msj 	            = utf8_decode( strip_tags(trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING))) );
+$msj 	            = $_POST['message'];
 
 if($msj != ''){
   $NuevoMsj  = ("INSERT INTO msjs (user, user_id,to_user,to_id,message,nombre_equipo_user,leido)

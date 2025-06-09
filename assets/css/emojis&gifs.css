@@ -1,0 +1,79 @@
+.emoji-panel {
+    inherits: false;
+    position: absolute;
+    bottom: 75px;
+    left: 40px;
+    height: 40vh !important;
+    width: 448px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    display: none;
+  }
+
+  .emoji-panel.active {
+    display: block;
+  }
+
+  .tabs {
+    height: 40px !important;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+
+  .tab.active {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    height: calc(40vh - 40px) !important;
+    overflow: scroll;
+    display: none;
+    padding: 10px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+
+  #gifSearch {
+    height: auto !important;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  #gifResults {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .gif {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .emoji-panel {
+      left: 22px;
+      width: 60vw;
+    }
+    
+  }
