@@ -34,7 +34,7 @@ $target_path 	= $directorio . '/' . $imgperfil;
 //Moviendo imagen de Perfil
 if (move_uploaded_file($file_loc, $target_path)) {
 	//Si la Imagen se gusdao el en directorio, creamos un insert del Registro
-	date_default_timezone_set("Europa/Madrid");
+	date_default_timezone_set("Europe/Madrid");
 	$hora   		= date('h:i a', time() - 3600 * date('I'));
 	$fecha  		= date("d/m/Y");
 	$fechaRegistro 	= $fecha . " " . $hora;
