@@ -13,13 +13,14 @@ if (isset($_SESSION['email_user']) != "") {
 
 <head>
   <!-- Configuración del documento -->
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Chat - WhatApp, una sala para compartir mensajes, audios, imágenes, videos entre muchas cosas más.">
-  <meta name="author" content="URIAN VIERA">
-  <meta name="keyword" content="Web Developer Urian Viera">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="TCHAT - Tu aplicación de mensajería instantánea para compartir mensajes con tus compañeros de clase.">
+    <meta name="author" content="Alejandro y Yasmin">
+    <title>TCHAT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" src="https://fonts.googleapis.com/css?family=Roboto:400,700,300" />
   <!-- Favicon y título -->
   <link rel="shortcut icon" type="image/png" href="" />
   <title>Tchat - Login</title>
